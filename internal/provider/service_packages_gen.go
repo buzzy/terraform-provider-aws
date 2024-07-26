@@ -17,7 +17,6 @@ import (
 	"github.com/hashicorp/terraform-provider-aws/internal/service/apigatewayv2"
 	"github.com/hashicorp/terraform-provider-aws/internal/service/appautoscaling"
 	"github.com/hashicorp/terraform-provider-aws/internal/service/appconfig"
-	"github.com/hashicorp/terraform-provider-aws/internal/service/appfabric"
 	"github.com/hashicorp/terraform-provider-aws/internal/service/appflow"
 	"github.com/hashicorp/terraform-provider-aws/internal/service/appintegrations"
 	"github.com/hashicorp/terraform-provider-aws/internal/service/applicationinsights"
@@ -261,7 +260,6 @@ func servicePackages(ctx context.Context) []conns.ServicePackage {
 		apigatewayv2.ServicePackage(ctx),
 		appautoscaling.ServicePackage(ctx),
 		appconfig.ServicePackage(ctx),
-		appfabric.ServicePackage(ctx),
 		appflow.ServicePackage(ctx),
 		appintegrations.ServicePackage(ctx),
 		applicationinsights.ServicePackage(ctx),
